@@ -1,0 +1,14 @@
+name: text-to-schematics
+version: '${project.version}'
+main: fr.xam74er1.text2schem.Text2schem
+api-version: 1.19
+authors: [ xam74er1 ]
+description: A plugin to generate schematics from text
+
+commands:
+  sharpe:
+    description: Sends a greeting message to the player who uses the command.
+    usage: /sharpe <text>
+  seturl:
+    description: Set the url to the python sever
+    usage: /seturl <url>
