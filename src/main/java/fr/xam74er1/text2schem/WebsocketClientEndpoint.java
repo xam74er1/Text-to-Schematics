@@ -46,6 +46,7 @@ public class WebsocketClientEndpoint {
     public void onOpen(Session userSession) {
         System.out.println("opening websocket");
         this.userSession = userSession;
+
     }
 
     /**

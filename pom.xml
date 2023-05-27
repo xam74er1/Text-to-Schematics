@@ -6,7 +6,7 @@
 
     <groupId>fr.xam74er1</groupId>
     <artifactId>text2schem</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>text-to-schematics</name>
@@ -51,7 +51,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
 
                 <configuration>
-                    <outputDirectory>C:\Users\xam74\Documents\Minecraft\1.18 serv\plugins</outputDirectory>
+                    <outputDirectory>.</outputDirectory>
                 </configuration>
             </plugin>
 

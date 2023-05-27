@@ -86,7 +86,7 @@ public class SharpeCommand implements CommandExecutor {
                 int queuSize = json.getInt("queue_size");
                 double time = json.getDouble("avg_event_process_time");
                 System.out.println("prio" + queuSize + " time" + time);
-                time = Math.min(time,100);
+                time = Math.max(time,100);
                 player.sendMessage(ChatColor.DARK_PURPLE+"You are "+queuSize+" in the queue , estimated Time "+Math.floor(time)+" s");
 
             }
@@ -145,7 +145,7 @@ public class SharpeCommand implements CommandExecutor {
                     } catch (InterruptedException ex) {
                         System.err.println("InterruptedException exception: " + ex.getMessage());
                         Utils.sendErrorMessage(player, "the API server has an internal error");
-                    } catch (URISyntaxException ex) {
+                    } catch (Exception ex) {
                         System.err.println("URISyntaxException exception: " + ex.getMessage());
                         Utils.sendErrorMessage(player, "the URL for the API server (" + Utils.IP + ") is incorrect");
                     }
